@@ -17,6 +17,7 @@ Write a handy cheatsheet of the commands you need to commit your changes?
 > master, git pull, git checkout -b branch-name, git add, git commit -m "commit message", git push origin branch-name, git checkout master, git fetch origin master, git merge origin/master
 
 What is a pull request and how do you create and merge one?
-> A pull request is the process to merge changes to the master branch. In order to create one you have to first be on a feature branch and push it to GitHub using the command git push origin. From here you should be able to access the pull request on GitHub where you can 
+> A pull request is the process to merge changes to the master branch. In order to create one you have to first be on a feature branch and push it to GitHub using the command git push origin. From here you should be able to access the pull request on GitHub where you can merge the pull request onto the master branch.
 
 Why are pull requests preferred when working with teams?
+> Pull requests are preferred when working with teams because we want our code to be reviewed by collaborators to ensure that the changes being merged to the master branch have no errors. By having collaborators review the code for errors, we can reduce the potential for the master branch to be broken.
