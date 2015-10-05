@@ -14,7 +14,7 @@ What are the 3 stages of a git change and how do you move a file from one stage 
 > There are three stages of a git change: untracked files, changes not staged for commit, and changes to be committed. In order to move a file from untracked to staged (changes to be committed) you use the "git add file" command. Git changes can then be committed using the "git commit -m "commit message" command.
 
 Write a handy cheatsheet of the commands you need to commit your changes?
-> master, git pull, git checkout -b branch-name, git add, git commit -m "commit message", git push origin branch-name, git checkout master, git fetch origin master, git merge origin/master
+> master, git pull, git checkout -b branch-name, git add, git commit -m "commit message", git checkout master, git pull origin master, git checkout branch-name, git merge master, git push origin branch-name, git checkout master, git fetch origin master, git merge origin/master
 
 What is a pull request and how do you create and merge one?
 > A pull request is the process to merge changes to the master branch. In order to create one you have to first be on a feature branch and push it to GitHub using the command git push origin. From here you should be able to access the pull request on GitHub where you can merge the pull request onto the master branch.
