@@ -1,4 +1,4 @@
-![Alt text](/imgs/sitemap.png)
+![Alt text](/imgs/site-map.png)
 
 # 2.3 Design Reflection
 
