@@ -1,2 +1,2 @@
-![Index wireframe](/shawnspears.github.io/imgs/wireframe-index.png)
-![Blog/index wireframe](/shawnspears.github.io/imgs/wireframe-blog-index.png)
+![Index wireframe](/week-2/imgs/wireframe-index.png)
+![Blog/index wireframe](/week-2/imgs/wireframe-blog-index.png)
