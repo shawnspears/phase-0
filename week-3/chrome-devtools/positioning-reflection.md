@@ -2,31 +2,31 @@
 
 
 ![3.4 Change Colors](./imgs/3.4_changecolors.png)
-> 1. Changed the background-colors under ` element.style `
+> Changed the background-colors under ` element.style `
 
 ![3.4 Column](./imgs/3.4_column.png)
-> 2. Stacked the elements on top of each other
+> Stacked the elements on top of each other
 
 ![3.4 Row](./imgs/3.4_row.png)
-> 3. Put the elements in a row with display inline and inline-block
+> Put the elements in a row with display inline and inline-block
 
 ![3.4 Equidistant](./imgs/3.4_equidistant.png)
-> 4. Put the elements in a row with a 5em margin
+> Put the elements in a row with a 5em margin
 
 ![3.4 Squares](./imgs/3.4_squares.png)
-> 5. Resized the elements to squares
+> Resized the elements to squares
 
 ![3.4 Footer](./imgs/3.4_footer.png)
-> 6. Made ` div-1 ` a footer
+> Made ` div-1 ` a footer
 
 ![3.4 Header](./imgs/3.4_header.png)
-> 7. Made ` div-2 ` a header
+> Made ` div-2 ` a header
 
 ![3.4 Sidebar](./imgs/3.4_sidebar.png)
-> 8. Made ` div-3 ` a sidebar
+> Made ` div-3 ` a sidebar
 
 ![3.4 Creative](./imgs/3.4_creative.png)
-> 9. Got creative and placed them diagonally!
+> Got creative and placed them diagonally!
 
 
 ##How can you use Chrome's DevTools inspector to help you format or position elements?
