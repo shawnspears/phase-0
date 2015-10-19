@@ -1,3 +1,21 @@
+/*
+
+1. What is important to know when linking an external file (like a stylesheet) to an HTML file?
+  It's important to know that you can achieve this using the <link href"" type="text/css" rel="stylesheet" /> tag with the correct relative path that points to the CSS file.
+
+2. What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+  Positioning was incredibly tricky with this site, and I ended up positioning the two columns thorugh the use of a table rather than psoitioning anything. The text on the webpage was fairly simple to position however, because the text-align:center; declaration seemed to prove useful.
+
+3. What CSS did you use to modify the element style (like size, color, etc.)
+  We mostly just used color, font-size, and margins/padding to achieve the desired look. The pages itself doesn't require too much design other than the style of the text so we were lucky in that respect I suppose.
+
+4.Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+  We tried to just using <spans> to help us out with the variation in text. We used an id once simply because we couldn't apply the span style to every element that needed variation.
+
+5.When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+  I definitely think that the actual code base had cleaner code, because in the challenge we ended up getting incredibly frustrated and experimenting with a lot of different properties to try and mimic the site. There were times when communication wasn't the best so a lot of our experimentation is still shown in the CSS page unfortunately. I'll get around to cleaning it up eventually, but I definitely think its possibly to position the two columns using CSS and not tables which would give it cleaner code.
+
+*/
 * {
   color: #000080;
   background-color: #ffffff;
