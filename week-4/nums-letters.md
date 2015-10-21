@@ -30,3 +30,7 @@ puts 24 * 365
 ```ruby
 puts 60 * 24 * 365 * 10
 ```
+
+## Links to Ruby Files
+
+* [4.2.1 Defining Varibles](https://github.com/shawnspears/phase-0/blob/master/week-4/defining-variables.rb)
