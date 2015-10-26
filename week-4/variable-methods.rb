@@ -34,3 +34,8 @@
 
 # 6. What was confusing about this material? What made sense?
 	# I definitely thought that the majority of the material made sense as I related it to the ways in which I've interacted with interactive computer programs. It was actually really cool to have that "aha!" moment where I was able to realize exactly how video game conversations are able to appear to interact with you.
+
+# Links to Ruby Challenges
+
+	# 4.3.1 https://github.com/shawnspears/phase-0/blob/master/week-4/address/my_solution.rb
+	# 4.3.2 https://github.com/shawnspears/phase-0/blob/master/week-4/math/my_solution.rb
