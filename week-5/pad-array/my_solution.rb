@@ -27,6 +27,8 @@
 # End method
 
 # 1. Initial Solution
+
+# Initial Solution Round 1
 def pad!(array, min_size, value = nil) #destructive
   
   while array.length < min_size do
@@ -36,19 +38,13 @@ def pad!(array, min_size, value = nil) #destructive
   
 end
 
-our_array = [1,2,3,4]
-
+# Initial Solution Round 1
 def pad(array, min_size, value = nil) #non-destructive
   while array.length <= min_size do
     array << value
   end
   p array
 end
-
-our_array = [1,2,3]
-
-pad(our_array, 5)
-
 
 # 3. Refactored Solution
 
