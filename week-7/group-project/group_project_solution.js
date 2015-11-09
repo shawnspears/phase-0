@@ -18,7 +18,7 @@
 // ------ Story 1 ------
 
 // In the sum function, if I inputted either the odd length or even length list of integers, it should 
-// return in the sum of those integers. 
+// return the sum of those integers. 
 
 // ------ Story 2 ------
 
