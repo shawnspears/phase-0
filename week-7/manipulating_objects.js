@@ -1,6 +1,6 @@
  // Manipulating JavaScript Objects
 
-// I worked on this challenge: [by myself, with: ]
+// I worked on this challenge: [by myself]
 
 // There is a section below where you will write your code.
 
@@ -16,25 +16,42 @@ var terah = {
 // __________________________________________
 // Write your code below.
 
-
-
-
-
-
-
-
-
-
+var adam = {
+  name: "Adam"
+}
+terah.spouse = adam;
+terah.weight = 125;
+delete terah.eyeColor;
+terah.spouse.spouse = terah;
+terah.children = {};
+var carson = {name: "Carson"
+}
+terah.children.carson = carson
+var carter = {
+  name: "Carter"
+}
+terah.children.carter = carter
+var colton = {
+  name: "Colton"
+}
+terah.children.colton = colton
+adam.children = terah.children
 
 // __________________________________________
 // Reflection: Use the reflection guidelines
 //
-//
-//
-//
-//
-//
-
+// What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+//  The test that I had trouble passing was adding Carson as a property of terah's children property. I
+//  actually kept assigning the children property as the Carson object I had just created which obviously 
+//  doesn't makesense because Carson is a property of that property. So yeah, the rest of the kids were
+//  smooth sailing after that.
+// How difficult was it to add and delete properties outside of the object itself?
+//  Incredibly easy. You just create a new property assigned to the object and assign it, and delete
+//  is similar in that it is the same syntax but with "delete" infront of it. I feel like it is 
+//  actually easier and more organized to add/delete in this way, rather than going in and altering
+//  the object manually.
+// What did you learn about manipulating objects in this challenge?
+//  I learned how to add and delete properties to Objects, and also add properties to properties.
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
