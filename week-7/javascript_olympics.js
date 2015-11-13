@@ -67,7 +67,12 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 //		much better handle on creating functions, and using constructor functions as well!
 // What are constructor functions?
 //		In my understanding, constructor functions are used in order to  create a function for an
-//		object type that specifies its name, properties, and associated methods.
+//		object type that specifies its name, properties, and associated methods. In the sense that it
+//		will allow for the creation of new objects, I would say that it is somewhat similar in nature
+//		to classes in Ruby.
 // How are constructors different from Ruby classes (in your research)?
-
-
+//		Well this is quite relevant considering what I had just written in the previous question.. I 
+//		think that constructors mainly differ from Ruby classes in that Ruby objects are inherited 
+//		from class and JavaScript objects are created via object literal and constructor functions.
+//		The objects' shared behavior in constructor functions however, can be inherited from function
+//		prototypes, rather than Class methods in Ruby.
