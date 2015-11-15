@@ -1,5 +1,30 @@
 
 // Add the finished solution here when you receive it.
+
+function sum(list) {
+  for (var length = list.length, counter = 0, total = 0; counter < length; counter++) {
+    total += list[counter];
+  }
+  return total
+}
+
+function mean(list) {
+  var length = list.length;
+  return sum(list)/length;
+}
+
+function median(list) {
+  var length = list.length;
+  var half = Math.floor(length/2);
+  if (length % 2 != 0) {
+    return list[half+1];
+  }
+  else {
+    var result = (list[half]+list[half+1])/2;
+    return result;
+  }
+}
+
 // __________________________________________
 // Tests:  Do not alter code below this line.
 
