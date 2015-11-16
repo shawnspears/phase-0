@@ -101,6 +101,15 @@ var solve = {
 
 // Reflection
 // What was the most difficult part of this challenge?
+//	The most difficult part for me was thinking of an idea for a game! I figured that a clue like game might
+//	be fun to do, but I still have some work to do regarding linking it to HTML/CSS and making it playable on
+// a browswer.
 // What did you learn about creating objects and functions that interact with one another?
+//	I feel like I understand the scope of certain objects more, and how I am able to pass different objects
+//	as objects into another to make it interactive.
 // Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+//	Not yet. Again, more things to consider when I have the time. I plan on completely refactoring the game this
+//	week so that I can add it under my projects.
 // How can you access and manipulate properties of objects?
+//	Accessing properties is rather easy as you can utilize either dot or bracket notation, and then you can
+//	assign it a new value from there.
