@@ -1,7 +1,7 @@
 # Virus Predictor
 
 # I worked on this challenge [with: Josh Shin].
-# We spent [1] hours on this challenge.
+# We spent [1.5] hours on this challenge.
 
 # EXPLANATION OF require_relative
 #
@@ -94,7 +94,14 @@ end
 # Reflection Section
 
 # What are the differences between the two different hash syntaxes shown in the state_data file?
+#   The STATE_DATA hash syntax uses strings as the keys whereas the nested hash uses symbols.
 # What does require_relative do? How is it different from require?
+#   Require_relative links to a file within the same working directory via a relative path whereas
+#   require links to an external library.
 # What are some ways to iterate through a hash?
+#   In this challenge, the #.each method was the most efficient way to iterate through the hash.
 # When refactoring virus_effects, what stood out to you about the variables, if anything?
+#   The instance variables were already initialized, therefore having them in virus_effects
+#   was incredibly repetitive and not DRY!
 # What concept did you most solidify in this challenge?
+#   Making code more DRY, as well as visibility within programs using the private method.
