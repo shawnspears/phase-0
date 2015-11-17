@@ -29,7 +29,7 @@ var weapons = ["Gun", "Cyanide", "Candlestick", "Sword", "Switchblade"]
 var suspectList = ["Watson", "Irene", "Moriarty", "Mycroft", "Mrs. Hudson"]
 var locations = ["Picadilly Circus", "Baker Street", "Buckingham Palace", "River Thames", "London Eye"]
 
-murderInfo = {
+var murderInfo = {
   murderWeapon: weapons[Math.floor(Math.random()*weapons.length)],
   murderer: suspectList[Math.floor(Math.random()*suspectList.length)],
   location: locations[Math.floor(Math.random()*locations.length)]
