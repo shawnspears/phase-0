@@ -70,24 +70,48 @@ var weapons = ["Gun", "Cyanide", "Candlestick", "Sword", "Switchblade"]
 var suspectList = ["Watson", "Irene", "Moriarty", "Mycroft", "Mrs. Hudson"]
 var locations = ["Picadilly Circus", "Baker Street", "Buckingham Palace", "River Thames", "London Eye"]
 
-murderInfo = {
-  murderWeapon: weapons[Math.floor(Math.random()*weapons.length)],
+var murderInfo = {
+  weapon: weapons[Math.floor(Math.random()*weapons.length)],
   murderer: suspectList[Math.floor(Math.random()*suspectList.length)],
   location: locations[Math.floor(Math.random()*locations.length)]
 };
 
 var sherlock = {
   name: "Sherlock Holmes",
+  turn: turnNumber;
 };
+
+var rollArray = [0];
+var turnNumber = 0;
 
 var rollDie = function() {
+  turnNumber++;
+  if(turnNumber > 10) {
+    alert("You've taken far too long to solve the crime Sherlock. I'm afraid I'm going to have to take you off the case.")
+  };
   var roll = Math.ceil(Math.random() * 6);
-  return roll;
+  rollArray.push(roll);
 };
 
-var location = function() {
-  return locations[Math.floor(Math.random()*locations.length)]
+var total = rollArray.reduce(function(a, b) {
+  return a + b;
+});
+
+var between = function(x, min, max) {
+  return x >= min && x <= max;
 }
+
+if (total < 6) {
+  console.log("You are in the kitchen")
+} else if (between(total, 6, 12)) {
+  console.log("You are in the library")
+} else if (between(total, 13, 19)) {
+  console.log("You are in the bathroom")
+} else if (between(total, 20, 26)) {
+  console.log("You are in the bedroom")
+} else {
+  console.log("Where are you?")
+};
 
 var getInfo = function() {
   murderInfo.location
@@ -98,11 +122,11 @@ var solve = function() {
   var guessWeapon = prompt("What was the murder weapon Sherlock?")
   var guessLocation = prompt("And where was this committed?")
   var guessSuspect = prompt("And who committed the crime?")
-  if(guessWeapon === murderInfo.murderer && guessLocation === murderInfo.location && guessWeapon === murderInfo.weapon) {
+  if(guessSuspect === murderInfo.murderer && guessLocation === murderInfo.location && guessWeapon === murderInfo.weapon) {
     alert("Fantastic job Holmes, you solved the crime.")
   } else {
     alert("Looks like you have some more solving to do, Holmes.")
-  }
+  };
 };
 
 // Reflection
