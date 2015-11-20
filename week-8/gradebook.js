@@ -76,14 +76,29 @@ var average = function(array) {
   return (sum/array.length);
 };
 
+console.log(gradebook)
+
 // __________________________________________
 // Reflect
 
 // What did you learn about adding functions to objects?
-//  Nothing new necessarily, I learned 
+//  I learned that instead of assigning a function to a variable, you can just set an object
+//  property as a function, which I personally think keeps the code more organized as all of 
+//  the assocaited functions can be found as properties of the object. I feel as though I also 
+//  solidified how to modify objects though the use of functions. For example the addScore
+//  function modified the value of the testScores property (an arraay), by accessing the correct
+//  student property. It was good to practice modidying property values as well as adding new 
+//  properties to objects.
+
 // How did you iterate over nested arrays in JavaScript?
-//  We interated through nested arrays by utilizing the 
+//  We interated through nested array (seems like the only nested array was the scrores array)
+//  by using a for loop and accessing the nested array with the score indices. We iterated 
+//  over the indices by setting the variable "i" to index 0 and incrementing it every loop (i++).
+
 // Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+//  The only method that I wasn't familiar with was the array.reduce method that we found on
+//  the MDN docs. I'm still rather confused about the sytnax used (a function as the parameter?)
+//  but it was a much cleaner way to sum the values in the array than our initial for loop.
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
