@@ -1,3 +1,84 @@
+# Reverse Words
+
+# I worked on this challenge [by myself].
+# This challenge took me [1] hours.
+
+# Pseudocode
+# 1. Separate the words in the string
+# 2. Reverse each word separately so that they're still in the same order
+# 3. Print the string
+# 4. END
+
+# Initial Solution
+
+def reverse_words(string)
+  split = string.split(" ")
+  split.map! do |word|
+    word.reverse()
+  end
+  p split.join(" ")
+end
+
+# Refactored Solution
+
+def reverse_words(string)
+  split = string.split(" ")
+  split.map! do |word|
+    word.reverse()
+  end
+  p split.join(" ")
+end
+
+# Reflection
+# What concepts did you review or learn in this challenge?
+
+# Fibonacci Sequence
+
+# I worked on this challenge [by myself.
+# This challenge took me [1] hours.
+
+# Pseudocode
+
+# 1. Create an array with first two values
+# 2. Iterate over the array, and add a value to the end of the array that equals the sum of
+# the first two values, starting with the first value
+# 3. Move to the next value in the array and repeat step two
+# 4. Check if the array contains the input number
+# 5. Print true if contains number, and false if it doesn't
+# 6. END
+
+
+# Initial Solution
+
+def is_fibonacci?(num)
+  fibonacci = [0, 1]
+  i = 0
+  fibonacci.each do |i|
+    while fibonacci.last < num
+      fibonacci.push(fibonacci[i] + fibonacci[i + 1])
+      i += 1
+    end
+  end
+  p fibonacci.include?(num)
+end
+
+# Refactored Solution
+
+def is_fibonacci?(num)
+  fibonacci = [0, 1]
+  i = 0
+  fibonacci.each do |i|
+    while fibonacci.last < num
+      fibonacci.push(fibonacci[i] + fibonacci[i + 1])
+      i += 1
+    end
+  end
+  p fibonacci.include?(num)
+end
+
+# Reflection
+# What concepts did you review or learn in this challenge?
+
 # FizzBuzz Super Edition
 
 # I worked on this challenge [by myself].
