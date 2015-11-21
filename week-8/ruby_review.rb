@@ -1,3 +1,55 @@
+# FizzBuzz Super Edition
+
+# I worked on this challenge [by myself].
+# This challenge took me [0.5] hours.
+
+# Pseudocode
+
+# 1. Iterate through the input array
+# 2. If the value in the array is evenly divisable by 15 assign the value to "FizzBuzz"
+# 3. If the value in the array is evenly divisable by 5 assign the value to "Buzz"
+# 4. If the value in the array is evenly divisable by 3 assign the value to "Fizz"
+# 5. Make sure the array values are being modified
+# 6. When done iterating, print the array
+# 7. END
+
+# Initial Solution
+
+def super_fizzbuzz(array)
+  array.map! do |num|
+    if num % 15 == 0
+      num = "FizzBuzz"
+    elsif num % 5 == 0
+      num = "Buzz"
+    elsif num % 3 == 0
+      num = "Fizz"
+    else
+      num = num
+    end
+  end 
+  p array
+end
+
+# Refactored Solution
+
+def super_fizzbuzz(array)
+  array.map! do |num|
+    if num % 15 == 0
+      num = "FizzBuzz"
+    elsif num % 5 == 0
+      num = "Buzz"
+    elsif num % 3 == 0
+      num = "Fizz"
+    else
+      num = num
+    end
+  end 
+  p array
+end
+
+# Reflection
+# What concepts did you review or learn in this challenge?
+
 # Cipher Challenge
 
 # I worked on this challenge [by myself]
@@ -64,7 +116,11 @@ end
 
 # Your Refactored Solution
 
+p cipher = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
+i = 0
+cipher[i] = cipher[i-4]
+p cipher[0]
 
 
 
