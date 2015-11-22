@@ -49,6 +49,12 @@
 
 ` SELECT regions.region_name, states.state_name FROM regions JOIN states ON regions.id = states.region_id; `
 
+
+# Releasse 6: Your Own Schema
+
+![Clueless Outfit Schema](./outfit_schema.png)
+
+
 # Release 7: Reflect
 ## What are databases for?
 
