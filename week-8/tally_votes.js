@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: Syema Ailia.
+// This challenge took me [2.5] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -140,16 +140,21 @@ var assignPositions = function(){
 // Reflection
 
 // What did you learn about iterating over nested objects in JavaScript?
+
 //  I learned that it was rather frustrating haha! By in all honesty, I learned that the most efficient
 //  way to go about iterating over nested objects in JS is through for/in loops. I had very sparse
 //  knowledge regarding for/in loops coming into the challenge, mainly relating to the fact that it
 //  allows for a variable that accesses the property of an object. Apparently that is exactly what we
 //  needed to do in the challenge, and it is clear that it really organizes/cleans the code up. A
 //  comparison between the tally in the inital and refactored solution really shows this.
+
 // Were you able to find useful methods to help you with this?
+
 //  We didn't any any built in methods in the code, we really just iterated through the objects using
 //  for/in loops and then assigned new properties from there.
+
 // What concepts were solidified in the process of working through this challenge?
+
 //  DEFINITELY iterating over nested objects. Other than that, just generally working from a good
 //  psuedocode foundation and making sure each step of our logic checked out.
 
