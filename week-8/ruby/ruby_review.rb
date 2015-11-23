@@ -31,6 +31,21 @@ end
 
 # Reflection
 # What concepts did you review or learn in this challenge?
+#   I reviewed the syntax for the split and join methods, as the rspec wantsed the
+#   words to be reversed in a fairly specific manner (the words in the sentence were
+#   still in order, however the words themselves were reversed). This lead to having
+#   to split the words where there were spaces rather than just reversing the entire
+#   sentence.
+
+# What is still confusing to you about Ruby?
+#   Honestly compared to JS, I'm know just getting tripped up on the simple syntax 
+#   and not having excess notation. I guess what is still somewhat tripping me up
+#   are classes and the scope of particular objects within them, but for the most
+#   part I know my way around instance/local variables.
+
+# What are you going to study to get more prepared for Phase 1?
+#   I'm going to try and get through all of these Ruby challenges by the end of next
+#   week to really test my knowledge of Ruby.
 
 # Fibonacci Sequence
 
@@ -78,6 +93,7 @@ end
 
 # Reflection
 # What concepts did you review or learn in this challenge?
+#   Iterating over arrays, and utilizing variables as indices.
 
 # FizzBuzz Super Edition
 
@@ -130,6 +146,14 @@ end
 
 # Reflection
 # What concepts did you review or learn in this challenge?
+#   Using the map method to permanently modify the array so that I would just return
+#   the original array at the end.
+
+
+
+# ------- WORK IN PROGRESS FOR NEXT WEEK FROM THIS POINT ------- 
+
+
 
 # Cipher Challenge
 
@@ -217,5 +241,3 @@ p dr_evils_cipher("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?")
 
 # Reflection
 # What concepts did you review or learn in this challenge?
-# What is still confusing to you about Ruby?
-# What are you going to study to get more prepared for Phase 1?
