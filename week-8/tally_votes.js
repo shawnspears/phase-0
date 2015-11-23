@@ -64,31 +64,94 @@ var officers = {
 
 // Pseudocode
 
+// PSUEDOCODE -- Tally the votes in voteCount.
+// 1. Go through each property in in votes
+// 2. Go into each subproperty in votes access position
+// 3. Assign position a value of 0 (so that it isn't undefined)
+// 4. Iterate through each subproperty and increment value by 1 each time
+// 5. Assign the integer value to candidate property in position property in voteCount
+
+// PSUEDOCODE -- Assign officer positions.
+// 1. For each property in voteCount, obtain the value of the subproperty 
+// 2. Create variable to compare subproperties 
+// 3. Compare each subproperty's value to variable and assign variable to higher value
+// 4. Assign officer position to the variable (which should be the highest)
+// 5. Print officers
 
 // __________________________________________
 // Initial Solution
 
+for(var voter in votes) {
+  voteCount["president"][votes[voter]["president"]] = 0;
+  voteCount["vicePresident"][votes[voter]["vicePresident"]] = 0;
+  voteCount["secretary"][votes[voter]["secretary"]] = 0;
+  voteCount["treasurer"][votes[voter]["treasurer"]] = 0;
+};
 
+for(var voter in votes) {
+  voteCount["president"][votes[voter]["president"]]++;
+  voteCount["vicePresident"][votes[voter]["vicePresident"]]++;
+  voteCount["secretary"][votes[voter]["secretary"]]++;
+  voteCount["treasurer"][votes[voter]["treasurer"]]++;
+};
 
+for(var position in voteCount) {
+  var winner = 0;
+  for(var candidate in voteCount[position])  {
+    if(voteCount[position][candidate] > winner)  {
+      winner = voteCount[position][candidate];
+      officers[position] = candidate;
+    };
+  };
+};  
 
-
-
+console.log(voteCount);
+console.log(officers);
 
 // __________________________________________
 // Refactored Solution
 
+var tallyVotes = function(){
+  for(var voter in votes) {
+    for(var position in votes[voter]) {
+    voteCount[position][votes[voter][position]] = 0;
+    };
+  };
+  for(var voter in votes) {
+    for(var position in votes[voter]) {
+    voteCount[position][votes[voter][position]]++;
+    };
+  };
+};
 
-
-
-
+var assignPositions = function(){
+  for(var position in voteCount) {
+    var winner = 0;
+    for(var candidate in voteCount[position])  {
+      if(voteCount[position][candidate] > winner)  {
+        winner = voteCount[position][candidate];
+        officers[position] = candidate;
+      };
+    };
+  };  
+};
 
 // __________________________________________
 // Reflection
 
-
-
-
-
+// What did you learn about iterating over nested objects in JavaScript?
+//  I learned that it was rather frustrating haha! By in all honesty, I learned that the most efficient
+//  way to go about iterating over nested objects in JS is through for/in loops. I had very sparse
+//  knowledge regarding for/in loops coming into the challenge, mainly relating to the fact that it
+//  allows for a variable that accesses the property of an object. Apparently that is exactly what we
+//  needed to do in the challenge, and it is clear that it really organizes/cleans the code up. A
+//  comparison between the tally in the inital and refactored solution really shows this.
+// Were you able to find useful methods to help you with this?
+//  We didn't any any built in methods in the code, we really just iterated through the objects using
+//  for/in loops and then assigned new properties from there.
+// What concepts were solidified in the process of working through this challenge?
+//  DEFINITELY iterating over nested objects. Other than that, just generally working from a good
+//  psuedocode foundation and making sure each step of our logic checked out.
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
