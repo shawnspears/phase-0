@@ -11,7 +11,7 @@
     <p>remove the #release-1 div</p>
   </div>
 
-  <h1>Change this text to finish release 2</h1>
+  <h1 id="release-2">Change this text to finish release 2</h1>
 
   <div id="release-3">
     <p class="release-4"> add CSS to this div</p>
@@ -20,7 +20,6 @@
   <template id="hidden">
     <div>
       <h1> Congrats! You finished the challenge.</h1>
-      <img src="http://media.giphy.com/media/2UpzC3iPenf44/giphy.gif">
     </div>
   </template>
 
@@ -28,5 +27,30 @@
 </body>
 </html>
 
-<!-- Add your reflection here -->
-<!-- # This challenge took me [#] hours. -->
+<!-- Release 7: Reflection -->
+
+<!-- 
+
+What did you learn about the DOM?
+  I think the most important take away from this challenge was that you can access
+  different nodes in the DOM via "getting them by their ID" and then manipulate them
+  using DOM methods. Apparently everything is considered a node in the DOM, so that's
+  fun. In classes, its a tad annoying because every node associated with a class has
+  an index.
+
+What are some useful methods to use to manipulate the DOM? 
+  document.getElementById("id").innerHTML = "new text" - retrieves the appropriate node
+  from the DOM and changes the text within that node.
+
+  document.getElementById("id").style.property = "value" - here you can change the css
+  of a particular node based on the property/values you indicate (this is so much more
+  messy than jquery!).
+
+  document.getElementsByClassName("class") - similar to getElementById, except that each
+  node associated with a class has an index and therefore you have to use a for loop to
+  make sure you iterate over all of the nodes in the class (again, in jquery this is much
+  less complicated).
+
+-->
+
+<!-- # This challenge took me [1] hour. -->
