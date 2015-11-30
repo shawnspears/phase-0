@@ -8,11 +8,11 @@
 
 // Release 2: Pseudocode
 
-// Create a new list
-// Add an item with a quantity to the list
-// Remove an item from the list
-// Update quantities for items in your list
-// Print the list (Consider how to make it look nice!)
+// Create a new list object
+// Create an add function that takes the item and quantity as parameters
+// Create a remove function that deletes the indicated item off the list
+// Create an update unction that takes the item and quantity as parametets
+// Create a function that prints each item and its quantity
 
 //________________________________________
 // Release 3: Initial Solution
@@ -118,6 +118,14 @@ list.printList(list);
 // Release 5: Reflect
 
 // What concepts did you solidify in working on this challenge? (reviewing the passing of information, objects, constructors, etc.)
+// 	I feel as though I was able to solidify a bit on constructor functions in JS, as the last time
+// 	we worked with them, it was incredibly brief. In my understanding, it functions fairly similarly
+// 	to a Ruby class.
 // What was the most difficult part of this challenge?
+//	Honestly, what was fairly difficult for me to grasp was the fact that I was thinking long term 
+//	(making this work via the DOM) and that messed with me head for a while. I couldn't logic through
+//	how I would be able to make distinct lists and add items to either of them.
 // Did an array or object make more sense to use and why?
+//	An object made the most sense to me, as I figured I would want to associate the item with its
+//	quantity in some way, and using an object made it easy to do so.
 
